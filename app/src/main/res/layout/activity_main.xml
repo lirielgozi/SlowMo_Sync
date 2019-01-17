@@ -6,14 +6,17 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:orientation="vertical"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
+
     <Button
         android:id="@+id/loadbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOAD"
         android:layout_gravity="center"
-        />
+        android:fontFamily="@font/baloo"
+        android:text="LOAD"
+        android:textColor="@android:color/white" />
 
 
     <LinearLayout
@@ -27,14 +30,20 @@
             android:id="@+id/importFPS_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:fontFamily="@font/baloo_thambi"
             android:gravity="center"
             android:padding="8dp"
-            android:text="Choose your shooting FPS" />
+            android:text="Choose your shooting FPS"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
         <RadioGroup
             android:id="@+id/radioGroup_import"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTintMode="src_over"
             android:orientation="horizontal"
             android:padding="8dp">
 
@@ -43,45 +52,62 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:alpha="0.9"
                 android:button="@null"
                 android:checked="false"
                 android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:fontFamily="@font/baloo"
                 android:gravity="center_horizontal|bottom"
                 android:onClick="importFpsCheckBtn"
-                android:text="24" />
+                android:text="24"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/btn30Fps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:alpha="0.9"
                 android:button="@null"
                 android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:fontFamily="@font/baloo"
                 android:gravity="center_horizontal|bottom"
                 android:onClick="importFpsCheckBtn"
-                android:text="30" />
+                android:text="30"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/btn60Fps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:alpha="0.9"
                 android:button="@null"
                 android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:fontFamily="@font/baloo"
                 android:gravity="center_horizontal|bottom"
                 android:onClick="importFpsCheckBtn"
-                android:text="60" />
+                android:text="60"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/btn120Fps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:alpha="0.9"
+                android:backgroundTintMode="src_atop"
                 android:button="@null"
                 android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:fontFamily="@font/baloo"
                 android:gravity="center_horizontal|bottom"
                 android:onClick="importFpsCheckBtn"
-                android:text="120" />
+                android:text="120"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
         </RadioGroup>
     </LinearLayout>
 
@@ -96,9 +122,14 @@
             android:id="@+id/exportFPS_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:fontFamily="@font/baloo_thambi"
             android:gravity="center"
             android:padding="8dp"
-            android:text="Choose your export FPS" />
+            android:text="Choose your export FPS"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
         <RadioGroup
             android:id="@+id/radioGroup_export"
@@ -113,25 +144,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:alpha="0.9"
                 android:button="@null"
                 android:checked="false"
                 android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:fontFamily="@font/baloo"
                 android:gravity="center_horizontal|bottom"
                 android:onClick="exportFpsCheckBtn"
                 android:text="24"
-                />
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/btnExport30Fps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:alpha="0.9"
                 android:button="@null"
                 android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                android:fontFamily="@font/baloo"
                 android:gravity="center_horizontal|bottom"
                 android:onClick="exportFpsCheckBtn"
                 android:text="30"
-                />
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
         </RadioGroup>
     </LinearLayout>
@@ -163,14 +200,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_weight="1"
-                android:text="0:00" />
+                android:alpha="0.7"
+                android:fontFamily="@font/baloo"
+                android:text="0:00"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/remainingTimeLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
-                android:text="-0:00" />
+                android:alpha="0.7"
+                android:fontFamily="@font/baloo"
+                android:text="-0:00"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 
@@ -186,24 +229,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/baloo"
             android:onClick="play"
-            android:text="PLAY" />
+            android:text="PLAY"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btnPause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/baloo"
             android:onClick="pause"
-            android:text="Pause" />
+            android:text="Pause"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btnStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/baloo"
             android:onClick="stop"
-            android:text="STOP" />
+            android:text="STOP"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
     <LinearLayout
@@ -212,11 +261,17 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:padding="12dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.9"
+            android:fontFamily="@font/baloo_thambi"
             android:text="Add 3 Beeps"
-            android:layout_gravity="center" />
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
         <Switch
             android:id="@+id/addBeeps"
