@@ -14,17 +14,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:alpha="0.8"
+        android:background="@drawable/load_button_style"
         android:fontFamily="@font/baloo"
         android:text="LOAD"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
 
     <LinearLayout
         android:id="@+id/chooseyourfps_Layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/importFPS_textView"
@@ -33,11 +35,11 @@
             android:alpha="0.9"
             android:fontFamily="@font/baloo_thambi"
             android:gravity="center"
-            android:padding="8dp"
+            android:paddingTop="12dp"
             android:text="Choose your shooting FPS"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <RadioGroup
             android:id="@+id/radioGroup_import"
@@ -61,6 +63,7 @@
                 android:onClick="importFpsCheckBtn"
                 android:text="24"
                 android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"
                 android:textSize="18sp" />
 
             <RadioButton
@@ -125,11 +128,10 @@
             android:alpha="0.9"
             android:fontFamily="@font/baloo_thambi"
             android:gravity="center"
-            android:padding="8dp"
             android:text="Choose your export FPS"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <RadioGroup
             android:id="@+id/radioGroup_export"
@@ -137,7 +139,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
 
-            android:padding="8dp">
+            >
 
             <RadioButton
                 android:id="@+id/btnExport24Fps"
@@ -185,9 +187,9 @@
             android:id="@+id/seekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="6dp"
-            android:enabled = "true"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:enabled="true"
+            android:padding="2dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -255,12 +257,13 @@
             android:textColor="@android:color/white" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:padding="12dp">
+        android:padding="4dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -271,7 +274,7 @@
             android:text="Add 3 Beeps"
             android:textAllCaps="true"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <Switch
             android:id="@+id/addBeeps"
