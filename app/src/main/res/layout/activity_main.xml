@@ -223,37 +223,41 @@
         android:id="@+id/playerBttonsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:padding="6dp">
 
         <Button
             android:id="@+id/btnPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="24dp"
+            android:layout_height="130dp"
             android:layout_weight="1"
+            android:background="@drawable/play_button"
+            android:backgroundTint="@android:color/white"
             android:fontFamily="@font/baloo"
             android:onClick="play"
-            android:text="PLAY"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btnPause"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="24dp"
+            android:layout_height="130dp"
             android:layout_weight="1"
+            android:background="@drawable/pause"
+            android:backgroundTint="@android:color/white"
             android:fontFamily="@font/baloo"
             android:onClick="pause"
-            android:text="Pause"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btnStop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="24dp"
+            android:layout_height="130dp"
             android:layout_weight="1"
+            android:background="@drawable/stop"
+            android:backgroundTint="@android:color/white"
             android:fontFamily="@font/baloo"
             android:onClick="stop"
-            android:text="STOP"
             android:textColor="@android:color/white" />
 
     </LinearLayout>
