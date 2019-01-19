@@ -7,7 +7,9 @@
     <color name="StartcolorGreen">#08E0BF</color>
     <color name="colorButtons">#F085F0</color>
     <color name="colorAccent">#F085F0</color>
-
+    <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
 
 
 
