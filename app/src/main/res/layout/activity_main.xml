@@ -9,18 +9,6 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/loadbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:alpha="0.8"
-        android:background="@drawable/load_button_style"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="LOAD"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
-
 
     <LinearLayout
         android:id="@+id/chooseyourfps_Layout"
@@ -233,18 +221,19 @@
 
     <LinearLayout
         android:id="@+id/playerBttonsLayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="6dp">
 
         <Button
             android:id="@+id/btnPlay"
-            android:layout_width="90dp"
-            android:layout_height="72dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"
             android:background="@drawable/play_button_background"
             android:fontFamily="@font/baloo"
@@ -253,10 +242,10 @@
 
         <Button
             android:id="@+id/btnPause"
-            android:layout_width="90dp"
-            android:layout_height="72dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"
             android:background="@drawable/pause_button_background"
             android:fontFamily="@font/baloo"
@@ -265,10 +254,10 @@
 
         <Button
             android:id="@+id/btnStop"
-            android:layout_width="90dp"
-            android:layout_height="72dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"
             android:background="@drawable/stop_button_background"
             android:fontFamily="@font/baloo"
@@ -281,8 +270,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical"
-        android:padding="4dp">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -302,6 +290,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:padding="16dp" />
+
+        <Button
+            android:id="@+id/loadbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.8"
+            android:background="@drawable/load_button_style"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="LOAD"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
     </LinearLayout>
 
 </LinearLayout>
