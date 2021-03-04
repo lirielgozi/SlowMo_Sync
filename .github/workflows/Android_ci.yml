@@ -25,7 +25,7 @@ jobs:
           # SMTP server address
           server_address: mail.hitzbakery.com
           # SMTP server port
-          server_port: 25
+          server_port: 465
           # Authenticate as this user to SMTP server
           username: info@hitzbakery.com
           # Authenticate with this password to SMTP server
