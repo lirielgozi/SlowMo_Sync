@@ -66,6 +66,6 @@ jobs:
       uses: r0adkll/upload-google-play@v1
       with:
         serviceAccountJson: service_account.json
-        packageName: com.hitzbakery.SloMo_Sync
+        packageName: com.Hitzbakery.slowmo_sync
         releaseFile: app/build/outputs/bundle/release/app-release.aab
         track: beta
