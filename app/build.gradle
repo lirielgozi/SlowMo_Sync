@@ -21,7 +21,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     dependenciesInfo {
-        includeInApk true
+        includeInApk false
+        includeInBundle false
     }
     buildToolsVersion '30.0.2'
 }
