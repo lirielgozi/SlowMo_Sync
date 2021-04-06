@@ -1,6 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
+    //...
+    lintOptions {
+        abortOnError false
+    }
+}
+android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.Hitzbakery.slowmo_sync"
