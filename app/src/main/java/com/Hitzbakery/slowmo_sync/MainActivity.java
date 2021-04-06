@@ -3,30 +3,19 @@ package com.Hitzbakery.slowmo_sync;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
-import com.microsoft.appcenter.AppCenter;
-import com.microsoft.appcenter.analytics.Analytics;
-import com.microsoft.appcenter.crashes.Crashes;
+
 import android.content.Intent;
-import android.database.Cursor;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.*;
-import android.app.ListActivity;
-
-import org.w3c.dom.Text;
-
-import java.io.File;
-import java.io.FileInputStream;
 
 
 public class MainActivity extends AppCompatActivity {
