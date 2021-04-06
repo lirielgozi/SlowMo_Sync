@@ -1,5 +1,11 @@
 package com.Hitzbakery.slowmo_sync;
 
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 import android.content.Intent;
 import android.database.Cursor;
 import android.media.AudioManager;
@@ -55,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        //AppCenter
+        AppCenter.start(getApplication(), "784e7b7d-2fa2-4d16-8af6-daf29527caf1",
+                Analytics.class, Crashes.class);
 
         audio = audio.EMPTY;
 
