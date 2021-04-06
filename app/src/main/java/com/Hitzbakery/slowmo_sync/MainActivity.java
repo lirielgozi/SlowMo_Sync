@@ -20,11 +20,20 @@ import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnPlay,btnStop,btnPause,loadbtn;
+    private Button btnPlay;
+    private Button btnStop;
+    private Button btnPause;
     private RadioGroup radioGroup_import,radioGroup_Export;
 
-    private RadioButton btn24Fps,btn30Fps,btn60Fps,btn120Fps,
-            btnExport24Fps,btnExport30Fps,importTotal,exportTotal,importRadio,exportRadio;
+    private RadioButton btn24Fps;
+    private RadioButton btn30Fps;
+    private RadioButton btn60Fps;
+    private RadioButton btn120Fps;
+    private RadioButton btnExport24Fps;
+    private RadioButton btnExport30Fps;
+    private RadioButton importTotal;
+    private RadioButton exportTotal;
+    private RadioButton importRadio;
 
     private SeekBar seekBar;
     private  TextView remainingTimeLabel,elapsedTtimeLabel;
@@ -75,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         radioGroup_import = (RadioGroup)findViewById(R.id.radioGroup_import);
         radioGroup_Export = (RadioGroup) findViewById(R.id.radioGroup_export);
         addBeeps = (Switch) findViewById(R.id.addBeeps);
-        loadbtn = (Button) findViewById(R.id.loadbtn);
+        Button loadbtn = (Button) findViewById(R.id.loadbtn);
 
         seekBar.setEnabled(false);
 
@@ -200,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
     {
 
         int exportRadioId = radioGroup_Export.getCheckedRadioButtonId();
-        exportRadio = findViewById(exportRadioId);
+        RadioButton exportRadio = findViewById(exportRadioId);
         Toast.makeText(this,"your export FPS rate: " + exportRadio.getText(),Toast.LENGTH_SHORT).show();
 
         exportFps = Float.valueOf(exportRadio.getText().toString());
