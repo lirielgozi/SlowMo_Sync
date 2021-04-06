@@ -7,6 +7,11 @@ android {
     }
 }
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Liri\\keystores\\slowmotionlipsync.jks')
+        }
+    }
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.Hitzbakery.slowmo_sync"
@@ -20,6 +25,7 @@ android {
         release {
            // minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
