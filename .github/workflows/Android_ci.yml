@@ -4,7 +4,10 @@ on:
   push:
     tags:
       - "build"
-      ##
+    branches:
+      - main
+      - dev
+      - test
 
 jobs:
   test:
