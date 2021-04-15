@@ -3,11 +3,7 @@ name: SlowMo_Sync Android CI
 on:
   push:
     tags:
-      - "build"s
-    branches:
-      - main
-      - dev
-      - test
+      - "build"
 
 jobs:
   test:
